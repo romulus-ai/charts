@@ -215,6 +215,9 @@ graylog:
   ## External URL is https ?
   externalUriTLS: false
 
+  ## Trusted Proxies for SSO auth
+  trustedProxies: "127.0.0.1/32, 0:0:0:0:0:0:0:1/128"
+
   ingress:
     ## If true, Graylog server Ingress will be created
     ##

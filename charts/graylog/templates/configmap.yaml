@@ -112,6 +112,8 @@ data:
     inputbuffer_processors = 2
     inputbuffer_wait_strategy = blocking
     message_journal_enabled = true
+    # SSO auth
+    trusted_proxies = {{ .Values.graylog.trustedProxies }}
     # Do not change `message_journal_dir` location
     message_journal_dir = /usr/share/graylog/data/journal
     message_journal_max_size = {{ .Values.graylog.journal.maxSize }}
